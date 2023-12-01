@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#235BE4</color>
+    <color name="bgColor">#000</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="focusedColor">#fff</color>
+    <color name="button_focused">#fff</color>
+    <color name="button_unfocused">#fff</color>
+    <color name="unFocusedColor">#88FFFFFF</color>
+
+</resources>

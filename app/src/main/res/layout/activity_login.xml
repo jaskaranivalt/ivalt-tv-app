@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/buttonStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="5dp"
+    android:orientation="horizontal"
+    tools:context=".Login">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@drawable/loginbg"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bottom_section"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="-9dp"
+                android:layout_marginBottom="9dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingVertical="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="301dp"
+                        android:layout_height="83dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/logo2" />
+                </LinearLayout>
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/country_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext"
+                    android:visibility="gone"
+                    app:ccpDialog_backgroundColor="@color/black"
+                    app:ccpDialog_textColor="@color/white"
+                    app:ccp_autoDetectCountry="true"
+                    app:ccp_defaultNameCode="IND"
+                    app:ccp_showFlag="true"
+                    app:ccp_showFullName="true"
+                    app:ccp_showNameCode="true"></com.hbb20.CountryCodePicker>
+
+                <LinearLayout
+                    android:id="@+id/countryTab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="43dp"
+                        android:layout_marginVertical="10dp"
+                        android:background="@drawable/auth_layout_left_size_icon_box"
+                        android:paddingHorizontal="8dp">
+
+                        <ImageView
+                            android:id="@+id/flag"
+                            android:layout_width="35dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/unitedstates" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/countryNameEditText"
+                        android:layout_width="315dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="4"
+                        android:background="@color/white"
+                        android:drawableEnd="@drawable/location"
+                        android:focusable="true"
+                        android:minHeight="43dp"
+                        android:padding="10dp"
+                        android:text="United States"
+                        android:textColor="#000000"
+                        app:lineHeight="4dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="10dp"
+                        android:background="@drawable/auth_layout_left_size_icon_box"
+                        android:paddingHorizontal="8dp">
+
+                        <LinearLayout
+                            android:layout_width="35dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/countryCode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/_1"
+                                android:textColor="#fff"
+                                android:textSize="@dimen/auth_text_input_size" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:layout_marginStart="4dp"
+                        android:background="@drawable/edittext"
+                        android:drawableEnd="@drawable/baseline_local_phone_24"
+                        android:drawablePadding="10dp"
+                        android:editable="false"
+                        android:hint="(xxx) xxx-xxxx"
+                        android:inputType="phone"
+                        android:padding="10dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#8A8A8A"
+                        android:textSize="@dimen/auth_text_input_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="7dp"
+                    android:background="@drawable/rounded_corner_button_auth"
+                    android:text="@string/register"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/term_condiotion_label"
+                        android:textColor="#fff"
+                        android:textSize="13sp" />
+
+                    <Button
+                        android:id="@+id/terms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:background="@android:color/transparent"
+                        android:text="@string/terms_and_conditions"
+
+                        android:textColor="@color/unFocusedColor"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="@drawable/authside" />
+
+
+</LinearLayout>

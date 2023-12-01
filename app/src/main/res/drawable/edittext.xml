@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--creating a outline edit text -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#fff" />
+    <corners android:topRightRadius="@dimen/auth_input_radius" android:bottomRightRadius="@dimen/auth_input_radius" />
+
+</shape>
