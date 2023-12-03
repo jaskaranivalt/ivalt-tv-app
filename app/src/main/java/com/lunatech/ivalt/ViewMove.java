@@ -1,12 +1,12 @@
 package com.lunatech.ivalt;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.VideoView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.lunatech.ivalt.databinding.ActivityViewMoveBinding;
 
@@ -16,7 +16,6 @@ public class ViewMove extends AppCompatActivity {
     VideoView videoView;
 
     ActivityViewMoveBinding viewMoveBinding;
-    private MediaController mediaControls;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +29,7 @@ public class ViewMove extends AppCompatActivity {
         videoView.setVideoURI(Uri.parse("https://ivalt.com/videos/videoplayback.mp4"));
         videoView.start();
 
-        mediaControls = new MediaController(this);
+        MediaController mediaControls = new MediaController(this);
         mediaControls.setAnchorView(videoView);
         videoView.setMediaController(mediaControls);
 

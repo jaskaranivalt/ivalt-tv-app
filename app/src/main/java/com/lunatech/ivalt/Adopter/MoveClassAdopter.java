@@ -9,7 +9,6 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import androidx.annotation.NonNull;
-import androidx.cardview.widget.CardView;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -23,7 +22,7 @@ public class MoveClassAdopter extends RecyclerView.Adapter {
 
 
     private final Context context;
-    private ArrayList<Moves> movesList;
+    private final ArrayList<Moves> movesList;
 
     public MoveClassAdopter(Context context, ArrayList<Moves> movesList) {
         this.context = context;

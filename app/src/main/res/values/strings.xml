@@ -21,6 +21,12 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
+    <!-- In debug -->
+    <string name="API_URL">https://api.ivalt.com</string>
+
+    <!-- In release -->
+    <string name="X_API_KEY">jMQKBdBFIJamh2TARfbUh3NG9h5Nl3mxa72VGfMl</string>
+
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus

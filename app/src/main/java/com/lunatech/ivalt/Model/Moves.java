@@ -21,13 +21,7 @@ public class Moves {
 
     @Override
     public String toString() {
-        return "Moves{" +
-                "moveName='" + moveName + '\'' +
-                ", moveType='" + moveType + '\'' +
-                ", moveCategory='" + moveCategory + '\'' +
-                ", movePower='" + movePower + '\'' +
-                ", moveAccuracy='" + moveAccuracy + '\'' +
-                '}';
+        return "Moves{" + "moveName='" + moveName + '\'' + ", moveType='" + moveType + '\'' + ", moveCategory='" + moveCategory + '\'' + ", movePower='" + movePower + '\'' + ", moveAccuracy='" + moveAccuracy + '\'' + '}';
     }
 
     public String getMoveName() {
